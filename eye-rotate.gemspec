@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "eye", '>= 0.6'
-  spec.add_dependency "logrotate"
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
