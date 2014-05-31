@@ -15,6 +15,9 @@ Options:
     :min_size (Fixnum) - set minimal file size for rotate
     :gzip (Boolean) - gzip file or not
     :count (Fixnum) - count of rotated files
+    :every (Fixnum) - how often rotate log (rotate every tick unless min_size set)
+    :filename (String) - use custom filename to rotate
+    :device (Symbol) - log from process settings [:stdout, :stderr, :stdall] (default: :stdall)
 
 Example config: Auto rotate all processes stdall:
 
