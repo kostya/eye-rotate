@@ -10,6 +10,12 @@ Log rotate for the [Eye](http://github.com/kostya/eye) gem.
 
 ## Usage
 
+Options:
+
+    :min_size (Fixnum) - set minimal file size for rotate
+    :gzip (Boolean) - gzip file or not
+    :count (Fixnum) - count of rotated files
+
 Example config: Auto rotate all processes stdall:
 
 ```ruby
