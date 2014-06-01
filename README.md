@@ -32,7 +32,7 @@ Eye.application :app do
   process :process do
     start_command "ruby -e '1000.times { puts Time.now; $stdout.flush; sleep 0.1 } '"
     daemonize true
-    pid_file "1.pid"
+    pid_file "/tmp/1.pid"
     stdall "/tmp/test.log"
   end
 end
