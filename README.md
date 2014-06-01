@@ -29,7 +29,6 @@ Eye.config do
 end
 
 Eye.application :app do
-  working_dir path
   process :process do
     start_command "ruby -e '1000.times { puts Time.now; $stdout.flush; sleep 0.1 } '"
     daemonize true
