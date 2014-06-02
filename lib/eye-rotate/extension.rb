@@ -4,7 +4,7 @@ require_relative "log_rotate"
 class Eye::Dsl::ConfigOpts
   def log_rotate(params = {})
     Eye.application '__default__' do
-      check :log_rotate_0, {:device => :stdall}.merge!(params)
+      check :log_rotate, {:device => :stdall}.merge!(params)
     end
   end
 end
