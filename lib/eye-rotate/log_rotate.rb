@@ -6,9 +6,9 @@ class LogRotate < Eye::Checker::CustomDefer
   param :filename, [String]
   param :device, [Symbol], nil, nil, [:stdout, :stderr, :stdall]
 
-  param :min_size, [Fixnum]
+  param :min_size, [Integer]
   param :gzip, [TrueClass, FalseClass]
-  param :count, [Fixnum]
+  param :count, [Integer]
 
   def initialize(*args)
     super
